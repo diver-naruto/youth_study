@@ -8,7 +8,7 @@ import os
 DRIVER_PATH = 'chromedriver'
 options = ChromeOptions()
 options.add_argument('--no-sandbox')
-# options.add_argument('--headless')  # 无头参数//
+options.add_argument('--headless')  # 无头参数//
 options.add_argument('--disable-gpu')
 
 options.add_argument("--disable-blink-features=automationControlled")
@@ -109,11 +109,9 @@ def get_youth_cook():
     
 
 
-# get_youth_cook()
 if __name__ == "__main__":
     get_youth_cook()
 
-# print (charge)
 
 
 
